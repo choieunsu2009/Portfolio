@@ -7,7 +7,7 @@
  * - Mobile menu
  */
 
-(function() {
+(function () {
   'use strict';
 
   // =========================================
@@ -132,13 +132,13 @@
         ko: '풀스택(기획, 개발, 디자인)'
       }
     },
-    razbino: {
-      id: 'razbino',
+    razino: {
+      id: 'razino',
       category: 'team',
       date: '2025-04-01 ~ 2025-11-01',
       tags: ['WebRTC', 'Express', 'EJS', 'Raspberry Pi'],
       title: {
-        en: 'Razbino',
+        en: 'Razino',
         ko: '라즈이노'
       },
       badge: {
@@ -146,7 +146,7 @@
         ko: '🏆 한국 코드페어 본선 진출'
       },
       overview: {
-        en: 'Goal: Prevent elderly solitary deaths and facilitate family communication.\n\nRazbino is an IoT-based one-touch video call system designed to prevent elderly solitary deaths and enable smooth family communication.',
+        en: 'Goal: Prevent elderly solitary deaths and facilitate family communication.\n\nRazino is an IoT-based one-touch video call system designed to prevent elderly solitary deaths and enable smooth family communication.',
         ko: '목표: 독거노인의 고독사 방지 및 가족 간 원활한 소통\n\n라즈이노는 독거노인의 고독사 방지 및 가족 간 원활한 소통을 목적로 한 IoT 기반 원터치 통화 시스템이다.'
       },
       details: {
@@ -198,7 +198,7 @@
   };
 
   // Project order for navigation
-  const projectOrder = ['cafe', 'timer', 'wineswap', 'anonymous', 'razbino', 'gca'];
+  const projectOrder = ['cafe', 'timer', 'wineswap', 'anonymous', 'razino', 'gca'];
 
   // =========================================
   // DOM Elements
@@ -239,7 +239,7 @@
   function setupNavigation() {
     // Smooth scroll for all anchor links
     document.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener('click', function(e) {
+      link.addEventListener('click', function (e) {
         e.preventDefault();
         const targetId = this.getAttribute('href').substring(1);
         const target = document.getElementById(targetId);
@@ -268,7 +268,7 @@
   // =========================================
   function setupMobileMenu() {
     if (mobileMenuToggle && nav) {
-      mobileMenuToggle.addEventListener('click', function() {
+      mobileMenuToggle.addEventListener('click', function () {
         nav.classList.toggle('active');
         this.classList.toggle('active');
       });
@@ -280,7 +280,7 @@
   // =========================================
   function setupProjectTabs() {
     tabBtns.forEach(btn => {
-      btn.addEventListener('click', function() {
+      btn.addEventListener('click', function () {
         // Update active tab
         tabBtns.forEach(b => b.classList.remove('active'));
         this.classList.add('active');
@@ -307,7 +307,7 @@
   function setupProjectModal() {
     // Open modal when clicking project link
     document.querySelectorAll('.project-link').forEach(link => {
-      link.addEventListener('click', function() {
+      link.addEventListener('click', function () {
         const projectId = this.getAttribute('data-project');
         openModal(projectId);
       });
@@ -320,7 +320,7 @@
 
     // Close on background click
     if (modal) {
-      modal.addEventListener('click', function(e) {
+      modal.addEventListener('click', function (e) {
         if (e.target === modal) {
           closeModal();
         }
@@ -328,7 +328,7 @@
     }
 
     // Close on Escape key
-    document.addEventListener('keydown', function(e) {
+    document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && modal.classList.contains('active')) {
         closeModal();
       }
@@ -336,14 +336,14 @@
 
     // Previous/Next buttons
     if (prevBtn) {
-      prevBtn.addEventListener('click', function() {
+      prevBtn.addEventListener('click', function () {
         currentProjectIndex = (currentProjectIndex - 1 + projectOrder.length) % projectOrder.length;
         openModal(projectOrder[currentProjectIndex]);
       });
     }
 
     if (nextBtn) {
-      nextBtn.addEventListener('click', function() {
+      nextBtn.addEventListener('click', function () {
         currentProjectIndex = (currentProjectIndex + 1) % projectOrder.length;
         openModal(projectOrder[currentProjectIndex]);
       });
