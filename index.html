@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Choi Eunsu (최은수) - Backend Developer Portfolio. Developer who always asks 'Why?' and seeks the essence.">
+  <meta name="keywords" content="Backend Developer, Spring Boot, Node.js, Python, MySQL, Portfolio">
+  <meta name="author" content="Choi Eunsu">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Choi Eunsu | Backend Developer">
+  <meta property="og:description" content="Developer who always asks 'Why?' and seeks the essence.">
+  <meta property="og:type" content="website">
+
+  <title>Choi Eunsu | Backend Developer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-container">
+      <a href="#hero" class="logo">CHOI EUNSU</a>
+
+      <nav class="nav" id="nav">
+        <a href="#about" class="nav-link" data-lang="en">About</a>
+        <a href="#about" class="nav-link" data-lang="ko" style="display:none;">소개</a>
+        <a href="#skills" class="nav-link" data-lang="en">Skills</a>
+        <a href="#skills" class="nav-link" data-lang="ko" style="display:none;">기술</a>
+        <a href="#projects" class="nav-link" data-lang="en">Projects</a>
+        <a href="#projects" class="nav-link" data-lang="ko" style="display:none;">프로젝트</a>
+        <a href="#contact" class="nav-link" data-lang="en">Contact</a>
+        <a href="#contact" class="nav-link" data-lang="ko" style="display:none;">연락</a>
+      </nav>
+
+      <div class="header-controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="icon-moon">🌙</span>
+          <span class="icon-sun" style="display:none;">☀️</span>
+        </button>
+        <button class="lang-toggle" id="langToggle">
+          <span data-lang="en" class="lang-active">EN</span>
+          <span class="lang-divider">|</span>
+          <span data-lang="ko">한글</span>
+        </button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <p class="hero-subtitle" data-lang="en">Backend Developer</p>
+        <p class="hero-subtitle" data-lang="ko" style="display:none;">백엔드 개발자</p>
+
+        <h1 class="hero-title">
+          <span class="hero-name-en">CHOI EUNSU</span>
+          <span class="hero-name-ko">최은수</span>
+        </h1>
+
+        <p class="hero-tagline" data-lang="en">"Developer who always asks 'Why?' and seeks the essence"</p>
+        <p class="hero-tagline" data-lang="ko" style="display:none;">"항상 '왜?'를 먼저 묻고, 본질을 찾는 개발자"</p>
+
+        <div class="hero-line"></div>
+
+        <div class="hero-links">
+          <a href="https://github.com/choieunsu2009" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <span class="link-divider">·</span>
+          <a href="mailto:jogg86199@gmail.com">Email</a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span data-lang="en">Scroll to explore</span>
+        <span data-lang="ko" style="display:none;">스크롤하여 탐색</span>
+        <span class="scroll-arrow">↓</span>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-lang="en">About Me</h2>
+          <h2 data-lang="ko" style="display:none;">소개</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text">
+            <p data-lang="en">
+              I'm a developer who always asks "Why?" first, focusing on the essence of problems rather than surface appearances. I prioritize reproducible and maintainable structures over quick builds.
+            </p>
+            <p data-lang="en">
+              I'm continuously building experience in operational design (deployment, automation, security) — not just "trying it out" but completing it end-to-end.
+            </p>
+            <p data-lang="ko" style="display:none;">
+              항상 "왜?"를 먼저 묻고, 겉모양이 아니라 문제의 본질을 잡으려는 개발자입니다. 빠르게 만드는 것보다 재현 가능하고 유지보수 가능한 구조를 우선합니다.
+            </p>
+            <p data-lang="ko" style="display:none;">
+              운영을 고려한 설계(배포·자동화·보안)를 "해봤다" 수준이 아니라, 끝까지 완료하는 경험을 계속 쌓는 중입니다.
+            </p>
+          </div>
+
+          <div class="about-details">
+            <div class="about-item">
+              <h4 data-lang="en">Focus Areas</h4>
+              <h4 data-lang="ko" style="display:none;">집중 분야</h4>
+              <p data-lang="en">Server/Deployment · Automation · Real Services</p>
+              <p data-lang="ko" style="display:none;">서버/배포 · 자동화 · 실제 서비스</p>
+            </div>
+
+            <div class="about-item">
+              <h4 data-lang="en">Strengths</h4>
+              <h4 data-lang="ko" style="display:none;">강점</h4>
+              <p data-lang="en">Debugging · Structuring · Documentation</p>
+              <p data-lang="ko" style="display:none;">디버깅 · 구조화 · 문서화</p>
+            </div>
+
+            <div class="about-item">
+              <h4 data-lang="en">Collaboration</h4>
+              <h4 data-lang="ko" style="display:none;">협업</h4>
+              <p data-lang="en">Documentation · Role Separation · Risk Management</p>
+              <p data-lang="ko" style="display:none;">문서화 · 역할 분리 · 리스크 관리</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-lang="en">Skills</h2>
+          <h2 data-lang="ko" style="display:none;">기술 스택</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            </div>
+            <h4>MySQL</h4>
+            <p data-lang="en">Proficient · Since 2026~</p>
+            <p data-lang="ko" style="display:none;">능숙 · 2026~</p>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            </div>
+            <h4>Python</h4>
+            <p data-lang="en">Proficient · Since 2026~</p>
+            <p data-lang="ko" style="display:none;">능숙 · 2026~</p>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            </div>
+            <h4>Node.js</h4>
+            <p data-lang="en">Project-ready · Since 2026~</p>
+            <p data-lang="ko" style="display:none;">프로젝트 수준 · 2026~</p>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            </div>
+            <h4>React</h4>
+            <p data-lang="en">Project-ready · Since 2026~</p>
+            <p data-lang="ko" style="display:none;">프로젝트 수준 · 2026~</p>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            </div>
+            <h4>Spring Boot</h4>
+            <p data-lang="en">Project-ready · Since 2026~</p>
+            <p data-lang="ko" style="display:none;">프로젝트 수준 · 2026~</p>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            </div>
+            <h4>Java</h4>
+            <p data-lang="en">Project-ready · Since 2026~</p>
+            <p data-lang="ko" style="display:none;">프로젝트 수준 · 2026~</p>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            </div>
+            <h4>C</h4>
+            <p data-lang="en">Project-ready · Since 2026~</p>
+            <p data-lang="ko" style="display:none;">프로젝트 수준 · 2026~</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-lang="en">Projects</h2>
+          <h2 data-lang="ko" style="display:none;">프로젝트</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="project-tabs">
+          <button class="tab-btn active" data-filter="all">All</button>
+          <button class="tab-btn" data-filter="personal">Personal</button>
+          <button class="tab-btn" data-filter="team">Team</button>
+        </div>
+
+        <div class="projects-list">
+          <!-- Project 1: Cafe Management System -->
+          <article class="project-item" data-category="personal" data-project="cafe">
+            <div class="project-header">
+              <span class="project-date">2025-12-01 ~ 2026-01-01</span>
+              <div class="project-tags">
+                <span>Spring Boot</span>
+                <span>MySQL</span>
+                <span>AWS</span>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <span data-lang="en">Cafe Management System</span>
+              <span data-lang="ko" style="display:none;">카페관리 시스템</span>
+            </h3>
+            <p class="project-desc" data-lang="en">Spring Boot-based cafe management system with AWS EC2 deployment and CI/CD automation.</p>
+            <p class="project-desc" data-lang="ko" style="display:none;">Spring Boot 기반 카페 관리 시스템, AWS EC2 배포 및 CI/CD 자동화.</p>
+            <button class="project-link" data-project="cafe">
+              <span data-lang="en">View Details →</span>
+              <span data-lang="ko" style="display:none;">자세히 보기 →</span>
+            </button>
+          </article>
+
+          <!-- Project 2: TIMER Project -->
+          <article class="project-item" data-category="personal" data-project="timer">
+            <div class="project-header">
+              <span class="project-date">2025-12-01</span>
+              <div class="project-tags">
+                <span>ESP32</span>
+                <span>Embedded C</span>
+                <span>Timing</span>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <span data-lang="en">TIMER Project (ESP32)</span>
+              <span data-lang="ko" style="display:none;">TIMER 제작 프로젝트 (ESP32)</span>
+            </h3>
+            <p class="project-desc" data-lang="en">ESP32 learning project with timer functionality and precision optimization.</p>
+            <p class="project-desc" data-lang="ko" style="display:none;">ESP32 학습 프로젝트, 타이머 기능 및 정밀도 최적화.</p>
+            <button class="project-link" data-project="timer">
+              <span data-lang="en">View Details →</span>
+              <span data-lang="ko" style="display:none;">자세히 보기 →</span>
+            </button>
+          </article>
+
+          <!-- Project 3: WINE SWAP -->
+          <article class="project-item" data-category="personal" data-project="wineswap">
+            <div class="project-header">
+              <span class="project-date">2025-05-01</span>
+              <div class="project-tags">
+                <span>Next.js</span>
+                <span>UI/UX</span>
+                <span>MVP</span>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <span data-lang="en">WINE SWAP</span>
+              <span data-lang="ko" style="display:none;">WINE SWAP (분실물/학생 간 거래)</span>
+            </h3>
+            <p class="project-desc" data-lang="en">Student trading and lost-and-found platform MVP built with Next.js.</p>
+            <p class="project-desc" data-lang="ko" style="display:none;">Next.js로 제작한 학생 간 거래 및 분실물 플랫폼 MVP.</p>
+            <button class="project-link" data-project="wineswap">
+              <span data-lang="en">View Details →</span>
+              <span data-lang="ko" style="display:none;">자세히 보기 →</span>
+            </button>
+          </article>
+
+          <!-- Project 4: Anonymous Message Board -->
+          <article class="project-item" data-category="personal" data-project="anonymous">
+            <div class="project-header">
+              <span class="project-date">2025-06-01</span>
+              <div class="project-tags">
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <span data-lang="en">Anonymous Message Board</span>
+              <span data-lang="ko" style="display:none;">최은수에게 전하고 싶은 말</span>
+            </h3>
+            <p class="project-desc" data-lang="en">Express practice project with security hardening for real hosting.</p>
+            <p class="project-desc" data-lang="ko" style="display:none;">실제 호스팅을 위한 보안 강화가 포함된 Express 연습 프로젝트.</p>
+            <button class="project-link" data-project="anonymous">
+              <span data-lang="en">View Details →</span>
+              <span data-lang="ko" style="display:none;">자세히 보기 →</span>
+            </button>
+          </article>
+
+          <!-- Project 5: Razbino -->
+          <article class="project-item" data-category="team" data-project="razbino">
+            <div class="project-header">
+              <span class="project-date">2025-04-01 ~ 2025-11-01</span>
+              <span class="project-badge">🏆 Korea Code Fair Finalist</span>
+              <div class="project-tags">
+                <span>WebRTC</span>
+                <span>Express</span>
+                <span>Raspberry Pi</span>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <span data-lang="en">Razbino</span>
+              <span data-lang="ko" style="display:none;">라즈이노</span>
+            </h3>
+            <p class="project-desc" data-lang="en">IoT-based one-touch video call system for elderly care using Raspberry Pi and WebRTC.</p>
+            <p class="project-desc" data-lang="ko" style="display:none;">Raspberry Pi와 WebRTC를 활용한 독거노인 케어용 IoT 기반 원터치 화상통화 시스템.</p>
+            <button class="project-link" data-project="razbino">
+              <span data-lang="en">View Details →</span>
+              <span data-lang="ko" style="display:none;">자세히 보기 →</span>
+            </button>
+          </article>
+
+          <!-- Project 6: GCA -->
+          <article class="project-item" data-category="team" data-project="gca">
+            <div class="project-header">
+              <span class="project-date">2025-06-01</span>
+              <div class="project-tags">
+                <span>React Native</span>
+                <span>AI</span>
+                <span>Figma</span>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <span data-lang="en">GCA (Good quality Cheap price with AI)</span>
+              <span data-lang="ko" style="display:none;">GCA (Good quality Cheap price with AI)</span>
+            </h3>
+            <p class="project-desc" data-lang="en">AI-powered agricultural product trading platform for regional economy.</p>
+            <p class="project-desc" data-lang="ko" style="display:none;">지역 경제 활성화를 위한 AI 기반 농산물 거래 플랫폼.</p>
+            <button class="project-link" data-project="gca">
+              <span data-lang="en">View Details →</span>
+              <span data-lang="ko" style="display:none;">자세히 보기 →</span>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-lang="en">Let's Connect</h2>
+          <h2 data-lang="ko" style="display:none;">연락하기</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-content">
+          <p data-lang="en">Open to new projects and collaboration opportunities.<br>Feel free to reach out anytime!</p>
+          <p data-lang="ko" style="display:none;">새로운 프로젝트와 협업 기회에 열려 있습니다.<br>언제든지 연락 주세요!</p>
+
+          <div class="contact-links">
+            <a href="mailto:jogg86199@gmail.com" class="contact-link">
+              <span data-lang="en">Email:</span>
+              <span data-lang="ko" style="display:none;">이메일:</span>
+              jogg86199@gmail.com
+            </a>
+            <a href="https://github.com/choieunsu2009" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <span data-lang="en">GitHub:</span>
+              <span data-lang="ko" style="display:none;">깃허브:</span>
+              github.com/choieunsu2009
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-line"></div>
+    <p data-lang="en">© 2026 Choi Eunsu (최은수). All rights reserved.</p>
+    <p data-lang="ko" style="display:none;">© 2026 최은수 (Choi Eunsu). All rights reserved.</p>
+    <p class="footer-made" data-lang="en">Made with HTML, CSS, & ❤️</p>
+    <p class="footer-made" data-lang="ko" style="display:none;">HTML, CSS, 그리고 ❤️로 제작</p>
+  </footer>
+
+  <!-- Project Detail Modal -->
+  <div class="modal" id="projectModal">
+    <button class="modal-close" id="modalClose" aria-label="Close modal">×</button>
+    <div class="modal-content" id="modalContent">
+      <!-- Content will be injected via JavaScript -->
+    </div>
+    <div class="modal-nav">
+      <button class="modal-nav-btn" id="prevProject">
+        <span data-lang="en">← Previous</span>
+        <span data-lang="ko" style="display:none;">← 이전</span>
+      </button>
+      <button class="modal-nav-btn" id="nextProject">
+        <span data-lang="en">Next →</span>
+        <span data-lang="ko" style="display:none;">다음 →</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/language-toggle.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
