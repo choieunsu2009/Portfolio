@@ -14,6 +14,34 @@
   // Project Data
   // =========================================
   const projectsData = {
+    cesbot: {
+      id: 'cesbot',
+      category: 'personal',
+      date: '2026-01 ~ 2026-02',
+      tags: ['OpenClaw', 'AI Agent', 'Figma', 'Newsletter'],
+      title: {
+        en: 'CES the bot',
+        ko: 'CES the bot'
+      },
+      badge: null,
+      overview: {
+        en: 'Goal: Build a personal AI agent that integrates with tools and automates daily workflows.\n\nBuilt on the OpenClaw framework, this personal AI agent supports custom skill creation and automated content generation.',
+        ko: '목표: 도구와 연동되고 일상 워크플로우를 자동화하는 개인용 AI 에이전트 제작.\n\nOpenClaw 기반으로 개발한 개인용 AI 에이전트로, 커스텀 스킬 제작 및 자동화된 콘텐츠 생성을 지원합니다.'
+      },
+      details: {
+        en: 'Developed a Figma skill for the agent, enabling AI-assisted design operations directly within Figma. Also configured an automated daily tech newsletter pipeline that collects and curates tech news every evening, ensuring no overlap with the previous day\'s content.',
+        ko: 'Figma용 스킬을 제작하여 Figma 내에서 AI 기반 디자인 작업을 직접 수행할 수 있게 했습니다. 또한 매일 저녁 기술 뉴스를 수집·큐레이션하는 자동화 뉴스레터 파이프라인을 구성했으며, 전날 내용과 겹치지 않도록 설계하였습니다.'
+      },
+      techStack: {
+        en: ['Agent Framework: OpenClaw', 'Custom Skill: Figma integration', 'Automation: Daily tech newsletter pipeline (no duplicates)'],
+        ko: ['에이전트 프레임워크: OpenClaw', '커스텀 스킬: Figma 연동', '자동화: 매일 저녁 기술 뉴스레터 파이프라인 (중복 없음)']
+      },
+      keyAchievements: {
+        en: 'Built a personal AI agent with Figma skill and automated daily tech newsletter that avoids duplicate content from the previous day.',
+        ko: 'Figma 스킬과 전날과 겹치지 않는 기술 뉴스레터 자동 생성 기능을 갖춘 개인용 AI 에이전트를 구축했습니다.'
+      },
+      links: []
+    },
     cafe: {
       id: 'cafe',
       category: 'personal',
@@ -163,6 +191,36 @@
       },
       links: []
     },
+    awareai: {
+      id: 'awareai',
+      category: 'personal',
+      date: '2026-01 ~ 2026-03',
+      tags: ['FastAPI', 'Gemini 2.5 Flash', 'GPT-5 mini', 'AI Agent'],
+      title: {
+        en: 'AWARE AI',
+        ko: 'AWARE AI'
+      },
+      badge: null,
+      overview: {
+        en: 'Goal: Provide personalized appearance scoring and AI-generated styling through photo analysis.\n\nFull-stack AI styling analysis application. Users upload a photo and receive an animal personality type (동물상), a style score, and AI-generated styled image variations.',
+        ko: '목표: 사진 분석을 통한 외모 점수 평가 및 AI 스타일링 이미지 제공.\n\n풀스택 AI 스타일링 분석 서비스. 사진을 업로드하면 동물상 유형, 스타일 점수, AI 스타일링 이미지 변환 결과를 제공합니다.'
+      },
+      details: {
+        en: 'Backend built with FastAPI, exposing two endpoints: /api/analyze (processes photo with user metadata via OpenAI GPT-5 mini) and /api/apply (generates styled images via Gemini 2.5 Flash Image).\n\nThe system classifies users into one of 7 animal vibe types (dog, cat, rabbit, fox, deer, bear, dinosaur) and normalizes style scores (0–100 → 0–10) through a sanitization layer.\n\nFrontend is a vanilla JS single-page app with three screens: upload, results, and styled image view.',
+        ko: 'FastAPI 백엔드에 두 개의 엔드포인트 구성: /api/analyze (OpenAI GPT-5 mini로 사진 및 사용자 메타데이터 분석), /api/apply (Gemini 2.5 Flash Image로 스타일링 이미지 생성).\n\n7가지 동물상 유형(강아지상, 고양이상, 토끼상, 여우상, 사슴상, 곰상, 공룡상)으로 분류하고, 스타일 점수를 0–100에서 0–10으로 정규화하는 출력 정제 레이어를 구현했습니다.\n\n프론트엔드는 바닐라 JS SPA로 업로드, 결과, 스타일링 이미지 3단계 화면으로 구성됩니다.'
+      },
+      techStack: {
+        en: ['Backend: FastAPI (Python)', 'Analysis AI: GPT-5 mini (animal type + style score)', 'Image AI: Gemini 2.5 Flash Image (styled image generation)', 'Frontend: Vanilla JS SPA (HTML/CSS/JavaScript)'],
+        ko: ['백엔드: FastAPI (Python)', '분석 AI: GPT-5 mini (동물상 분류 + 스타일 점수)', '이미지 AI: Gemini 2.5 Flash Image (스타일링 이미지 생성)', '프론트엔드: Vanilla JS SPA (HTML/CSS/JavaScript)']
+      },
+      keyAchievements: {
+        en: 'Built a dual-model AI pipeline combining GPT-5 mini and Gemini 2.5 Flash Image. Implemented output sanitization to normalize AI responses and classify users into 7 animal personality types with style scoring.',
+        ko: 'GPT-5 mini와 Gemini 2.5 Flash Image를 결합한 듀얼 모델 AI 파이프라인 구축. AI 응답을 정규화하고 7가지 동물상 유형 분류 및 스타일 점수를 반환하는 출력 정제 레이어를 구현했습니다.'
+      },
+      links: [
+        { label: 'GitHub Organization', url: 'https://github.com/optimist-AWARE' }
+      ]
+    },
     gca: {
       id: 'gca',
       category: 'team',
@@ -198,7 +256,7 @@
   };
 
   // Project order for navigation
-  const projectOrder = ['cafe', 'timer', 'wineswap', 'anonymous', 'razino', 'gca'];
+  const projectOrder = ['cesbot', 'awareai', 'cafe', 'timer', 'wineswap', 'anonymous', 'razino', 'gca'];
 
   // =========================================
   // DOM Elements
