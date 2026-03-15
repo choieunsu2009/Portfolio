@@ -14,6 +14,34 @@
   // Project Data
   // =========================================
   const projectsData = {
+    cesbot: {
+      id: 'cesbot',
+      category: 'personal',
+      date: '2026-01 ~ 2026-02',
+      tags: ['OpenClaw', 'AI Agent', 'Figma', 'Newsletter'],
+      title: {
+        en: 'CES the bot',
+        ko: 'CES the bot'
+      },
+      badge: null,
+      overview: {
+        en: 'Goal: Build a personal AI agent that integrates with tools and automates daily workflows.\n\nBuilt on the OpenClaw framework, this personal AI agent supports custom skill creation and automated content generation.',
+        ko: '목표: 도구와 연동되고 일상 워크플로우를 자동화하는 개인용 AI 에이전트 제작.\n\nOpenClaw 기반으로 개발한 개인용 AI 에이전트로, 커스텀 스킬 제작 및 자동화된 콘텐츠 생성을 지원합니다.'
+      },
+      details: {
+        en: 'Developed a Figma skill for the agent, enabling AI-assisted design operations directly within Figma. Also configured an automated daily tech newsletter pipeline that collects and curates tech news every evening, ensuring no overlap with the previous day\'s content.',
+        ko: 'Figma용 스킬을 제작하여 Figma 내에서 AI 기반 디자인 작업을 직접 수행할 수 있게 했습니다. 또한 매일 저녁 기술 뉴스를 수집·큐레이션하는 자동화 뉴스레터 파이프라인을 구성했으며, 전날 내용과 겹치지 않도록 설계하였습니다.'
+      },
+      techStack: {
+        en: ['Agent Framework: OpenClaw', 'Custom Skill: Figma integration', 'Automation: Daily tech newsletter pipeline (no duplicates)'],
+        ko: ['에이전트 프레임워크: OpenClaw', '커스텀 스킬: Figma 연동', '자동화: 매일 저녁 기술 뉴스레터 파이프라인 (중복 없음)']
+      },
+      keyAchievements: {
+        en: 'Built a personal AI agent with Figma skill and automated daily tech newsletter that avoids duplicate content from the previous day.',
+        ko: 'Figma 스킬과 전날과 겹치지 않는 기술 뉴스레터 자동 생성 기능을 갖춘 개인용 AI 에이전트를 구축했습니다.'
+      },
+      links: []
+    },
     cafe: {
       id: 'cafe',
       category: 'personal',
@@ -163,6 +191,36 @@
       },
       links: []
     },
+    awareai: {
+      id: 'awareai',
+      category: 'personal',
+      date: '2026-01 ~ 2026-03',
+      tags: ['FastAPI', 'Gemini Nano', 'GPT-4o mini', 'AI Agent'],
+      title: {
+        en: 'AWARE AI',
+        ko: 'AWARE AI'
+      },
+      badge: null,
+      overview: {
+        en: 'Goal: Provide personalized appearance scoring and styling tips through AI.\n\nFastAPI-based AI agent that analyzes user photos to evaluate appearance scores and generate customized styling recommendations.',
+        ko: '목표: AI를 통한 개인 맞춤형 외모 점수 평가 및 스타일링 팁 제공.\n\nFastAPI 기반 AI 에이전트로, 사용자 사진을 분석하여 외모 점수를 평가하고 맞춤형 스타일링 추천을 제공합니다.'
+      },
+      details: {
+        en: 'Developed a FastAPI-based agent backend. Leveraged Gemini Nano for lightweight on-device inference and GPT-4o mini for nuanced styling tip generation. The system evaluates appearance attributes and returns personalized style improvement recommendations.',
+        ko: 'FastAPI 기반 에이전트 백엔드를 개발했습니다. Gemini Nano를 경량 추론에, GPT-4o mini를 세밀한 스타일링 팁 생성에 활용했습니다. 외모 속성을 평가하고 개인화된 스타일 개선 추천을 반환하는 시스템입니다.'
+      },
+      techStack: {
+        en: ['Backend: FastAPI', 'AI Models: Gemini Nano, GPT-4o mini', 'Features: Appearance scoring, personalized styling tips'],
+        ko: ['백엔드: FastAPI', 'AI 모델: Gemini Nano, GPT-4o mini', '기능: 외모 점수 평가, 개인 맞춤 스타일링 팁']
+      },
+      keyAchievements: {
+        en: 'Built a multi-model AI agent combining Gemini Nano and GPT-4o mini for appearance evaluation and personalized styling recommendations.',
+        ko: 'Gemini Nano와 GPT-4o mini를 결합한 멀티 모델 AI 에이전트로 외모 평가 및 개인 맞춤 스타일링 추천 시스템을 구축했습니다.'
+      },
+      links: [
+        { label: 'GitHub Organization', url: 'https://github.com/aware-ai' }
+      ]
+    },
     gca: {
       id: 'gca',
       category: 'team',
@@ -198,7 +256,7 @@
   };
 
   // Project order for navigation
-  const projectOrder = ['cafe', 'timer', 'wineswap', 'anonymous', 'razino', 'gca'];
+  const projectOrder = ['cesbot', 'awareai', 'cafe', 'timer', 'wineswap', 'anonymous', 'razino', 'gca'];
 
   // =========================================
   // DOM Elements
