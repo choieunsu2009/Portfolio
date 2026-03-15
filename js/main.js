@@ -195,30 +195,30 @@
       id: 'awareai',
       category: 'personal',
       date: '2026-01 ~ 2026-03',
-      tags: ['FastAPI', 'Gemini Nano', 'GPT-4o mini', 'AI Agent'],
+      tags: ['FastAPI', 'Gemini 2.5 Flash', 'GPT-5 mini', 'AI Agent'],
       title: {
         en: 'AWARE AI',
         ko: 'AWARE AI'
       },
       badge: null,
       overview: {
-        en: 'Goal: Provide personalized appearance scoring and styling tips through AI.\n\nFastAPI-based AI agent that analyzes user photos to evaluate appearance scores and generate customized styling recommendations.',
-        ko: '목표: AI를 통한 개인 맞춤형 외모 점수 평가 및 스타일링 팁 제공.\n\nFastAPI 기반 AI 에이전트로, 사용자 사진을 분석하여 외모 점수를 평가하고 맞춤형 스타일링 추천을 제공합니다.'
+        en: 'Goal: Provide personalized appearance scoring and AI-generated styling through photo analysis.\n\nFull-stack AI styling analysis application. Users upload a photo and receive an animal personality type (동물상), a style score, and AI-generated styled image variations.',
+        ko: '목표: 사진 분석을 통한 외모 점수 평가 및 AI 스타일링 이미지 제공.\n\n풀스택 AI 스타일링 분석 서비스. 사진을 업로드하면 동물상 유형, 스타일 점수, AI 스타일링 이미지 변환 결과를 제공합니다.'
       },
       details: {
-        en: 'Developed a FastAPI-based agent backend. Leveraged Gemini Nano for lightweight on-device inference and GPT-4o mini for nuanced styling tip generation. The system evaluates appearance attributes and returns personalized style improvement recommendations.',
-        ko: 'FastAPI 기반 에이전트 백엔드를 개발했습니다. Gemini Nano를 경량 추론에, GPT-4o mini를 세밀한 스타일링 팁 생성에 활용했습니다. 외모 속성을 평가하고 개인화된 스타일 개선 추천을 반환하는 시스템입니다.'
+        en: 'Backend built with FastAPI, exposing two endpoints: /api/analyze (processes photo with user metadata via OpenAI GPT-5 mini) and /api/apply (generates styled images via Gemini 2.5 Flash Image).\n\nThe system classifies users into one of 7 animal vibe types (dog, cat, rabbit, fox, deer, bear, dinosaur) and normalizes style scores (0–100 → 0–10) through a sanitization layer.\n\nFrontend is a vanilla JS single-page app with three screens: upload, results, and styled image view.',
+        ko: 'FastAPI 백엔드에 두 개의 엔드포인트 구성: /api/analyze (OpenAI GPT-5 mini로 사진 및 사용자 메타데이터 분석), /api/apply (Gemini 2.5 Flash Image로 스타일링 이미지 생성).\n\n7가지 동물상 유형(강아지상, 고양이상, 토끼상, 여우상, 사슴상, 곰상, 공룡상)으로 분류하고, 스타일 점수를 0–100에서 0–10으로 정규화하는 출력 정제 레이어를 구현했습니다.\n\n프론트엔드는 바닐라 JS SPA로 업로드, 결과, 스타일링 이미지 3단계 화면으로 구성됩니다.'
       },
       techStack: {
-        en: ['Backend: FastAPI', 'AI Models: Gemini Nano, GPT-4o mini', 'Features: Appearance scoring, personalized styling tips'],
-        ko: ['백엔드: FastAPI', 'AI 모델: Gemini Nano, GPT-4o mini', '기능: 외모 점수 평가, 개인 맞춤 스타일링 팁']
+        en: ['Backend: FastAPI (Python)', 'Analysis AI: GPT-5 mini (animal type + style score)', 'Image AI: Gemini 2.5 Flash Image (styled image generation)', 'Frontend: Vanilla JS SPA (HTML/CSS/JavaScript)'],
+        ko: ['백엔드: FastAPI (Python)', '분석 AI: GPT-5 mini (동물상 분류 + 스타일 점수)', '이미지 AI: Gemini 2.5 Flash Image (스타일링 이미지 생성)', '프론트엔드: Vanilla JS SPA (HTML/CSS/JavaScript)']
       },
       keyAchievements: {
-        en: 'Built a multi-model AI agent combining Gemini Nano and GPT-4o mini for appearance evaluation and personalized styling recommendations.',
-        ko: 'Gemini Nano와 GPT-4o mini를 결합한 멀티 모델 AI 에이전트로 외모 평가 및 개인 맞춤 스타일링 추천 시스템을 구축했습니다.'
+        en: 'Built a dual-model AI pipeline combining GPT-5 mini and Gemini 2.5 Flash Image. Implemented output sanitization to normalize AI responses and classify users into 7 animal personality types with style scoring.',
+        ko: 'GPT-5 mini와 Gemini 2.5 Flash Image를 결합한 듀얼 모델 AI 파이프라인 구축. AI 응답을 정규화하고 7가지 동물상 유형 분류 및 스타일 점수를 반환하는 출력 정제 레이어를 구현했습니다.'
       },
       links: [
-        { label: 'GitHub Organization', url: 'https://github.com/aware-ai' }
+        { label: 'GitHub Organization', url: 'https://github.com/optimist-AWARE' }
       ]
     },
     gca: {
