@@ -966,6 +966,73 @@ button {
 }
 
 /* ===========================================
+   Awards Section
+   =========================================== */
+.awards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.awards-category-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin: 0 0 24px 0;
+}
+
+.awards-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.award-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.award-year {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+  min-width: 36px;
+  padding-top: 2px;
+}
+
+.award-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.award-name {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.award-project {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .awards-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+
+/* ===========================================
    Utility Classes
    =========================================== */
 .sr-only {

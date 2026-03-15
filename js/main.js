@@ -17,7 +17,7 @@
     cesbot: {
       id: 'cesbot',
       category: 'personal',
-      date: '2026-01 ~ 2026-02',
+      date: '2026-1 ~ 2026-2',
       tags: ['OpenClaw', 'AI Agent', 'Figma', 'Newsletter'],
       title: {
         en: 'CES the bot',
@@ -45,7 +45,7 @@
     cafe: {
       id: 'cafe',
       category: 'personal',
-      date: '2025-12-01 ~ 2026-01-01',
+      date: '2025-12 ~ 2026-1',
       tags: ['Spring Boot', 'MySQL', 'AWS EC2', 'CI/CD', 'Mustache'],
       title: {
         en: 'Cafe Management System',
@@ -73,7 +73,7 @@
     timer: {
       id: 'timer',
       category: 'personal',
-      date: '2025-12-01',
+      date: '2025-12',
       tags: ['ESP32', 'Embedded C', 'Timing'],
       title: {
         en: 'TIMER Project (ESP32)',
@@ -101,7 +101,7 @@
     wineswap: {
       id: 'wineswap',
       category: 'personal',
-      date: '2025-05-01',
+      date: '2025-5',
       tags: ['Next.js', 'UI/UX', 'MVP'],
       title: {
         en: 'WINE SWAP (Lost & Found / Student Trading)',
@@ -129,7 +129,7 @@
     anonymous: {
       id: 'anonymous',
       category: 'personal',
-      date: '2025-06-01',
+      date: '2025-6',
       tags: ['Node.js', 'Express', 'EJS', 'MySQL', 'Security'],
       title: {
         en: 'Anonymous Message Board',
@@ -163,7 +163,7 @@
     razino: {
       id: 'razino',
       category: 'team',
-      date: '2025-04-01 ~ 2025-11-01',
+      date: '2025-4 ~ 2025-11',
       tags: ['WebRTC', 'Express', 'EJS', 'Raspberry Pi'],
       title: {
         en: 'Razino',
@@ -193,8 +193,8 @@
     },
     awareai: {
       id: 'awareai',
-      category: 'personal',
-      date: '2026-01 ~ 2026-03',
+      category: 'team',
+      date: '2026-1 ~ 2026-3',
       tags: ['FastAPI', 'Gemini 2.5 Flash', 'GPT-5 mini', 'AI Agent'],
       title: {
         en: 'AWARE AI',
@@ -224,7 +224,7 @@
     gca: {
       id: 'gca',
       category: 'team',
-      date: '2025-06-01',
+      date: '2025-6',
       tags: ['React Native', 'AI', 'Figma', 'UI/UX'],
       title: {
         en: 'GCA (Good quality Cheap price with AI)',
@@ -256,7 +256,7 @@
   };
 
   // Project order for navigation
-  const projectOrder = ['cesbot', 'awareai', 'cafe', 'timer', 'wineswap', 'anonymous', 'razino', 'gca'];
+  const projectOrder = ['razino', 'wineswap', 'anonymous', 'gca', 'timer', 'cafe', 'cesbot', 'awareai'];
 
   // =========================================
   // DOM Elements
