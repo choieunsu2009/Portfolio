@@ -10,9 +10,9 @@
   const DARK = 'dark';
   const LIGHT = 'light';
 
-  // Get stored theme or default to dark
+  // Get stored theme or default to light
   function getStoredTheme() {
-    return localStorage.getItem(THEME_KEY) || DARK;
+    return localStorage.getItem(THEME_KEY) || LIGHT;
   }
 
   // Set theme on document

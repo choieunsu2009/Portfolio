@@ -10,9 +10,9 @@
   const EN = 'en';
   const KO = 'ko';
 
-  // Get stored language or default to English
+  // Get stored language or default to Korean
   function getStoredLang() {
-    return localStorage.getItem(LANG_KEY) || EN;
+    return localStorage.getItem(LANG_KEY) || KO;
   }
 
   // Set language
